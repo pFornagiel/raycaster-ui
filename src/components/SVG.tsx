@@ -183,7 +183,7 @@ const WASD = ({ onClick }: Props) => {
       <rect width="10.5" height="10.5" transform="translate(143 230)" fill="#232323" />
       <rect width="10.5" height="10.5" transform="translate(153 230)" fill="#232323" />
       <rect width="10.5" height="10.5" transform="translate(163 230)" fill="#232323" />
-      <g clip-path="url(#clip0_202_3300)">
+      <g clipPath="url(#clip0_202_3300)">
         <rect width="10.5" height="10.5" transform="translate(143 74)" fill="white" />
         <rect width="10.5" height="10.5" transform="translate(143 54)" fill="white" />
         <rect width="10.5" height="10.5" transform="translate(143 104)" fill="#232323" />
