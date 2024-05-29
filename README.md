@@ -5,9 +5,13 @@ This project is a Web UI for my original [Simply-Raycaster Project](https://gith
 You can give the raycaster a try at the current stage of development. [**Have fun!**](https://raycaster-ui.ct8.pl/)
 
 ## Sources
+#### Raycasting Engine:
 The blog and repository listed below are great introduction to the raycasting method and I highly recommend giving them a read.
 - [Lode Vandevenne's blog](https://lodev.org/cgtutor/raycasting.html)
 - [vinibiavatti1's tutorial](https://github.com/vinibiavatti1/RayCastingTutorial)
+#### Frontend Design:
+- [Game Font by mengyang](https://www.figma.com/community/file/969596436440383820)
+
 
 ## Local Installation and usage
 To install this project locally, make sure you have Node.js and npm installed. Then, you can clone the repository and install dependencies:
