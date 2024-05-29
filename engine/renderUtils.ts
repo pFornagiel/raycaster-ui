@@ -9,7 +9,7 @@ type pointCoordinates = { x: number, y: number }
 const initializeBuffer = (data: IGameData) => {
   const { canvasContext, screenWidth, screenHeight } = data
 
-  if(!canvasContext) return // add error throwing and handling
+  if (!canvasContext) return // add error throwing and handling
 
   data.renderData.imageData = canvasContext.getImageData(0, 0, screenWidth, screenHeight)
   data.renderData.buffer = data.renderData.imageData.data
@@ -100,15 +100,15 @@ const drawTexture = (data: IGameData, textureType: number, x: number, wallX: num
 
 // Render a loading screen on the entire canvas
 const drawLoading = (data: IGameData) => {
-  const {canvasContext} = data
-  if(!canvasContext) throw new Error('No canvas context')
+  const { canvasContext } = data
+  if (!canvasContext) throw new Error('No canvas context')
   canvasContext.fillStyle = "blue";
   canvasContext.fillRect(0, 0, data.screenWidth, data.screenHeight);
 
   canvasContext.font = "40px DotGothic16";
   canvasContext.fillStyle = 'white';
-  
-  canvasContext.fillText("Loading...", (data.screenWidth - canvasContext.measureText('Loading...').width)/2, data.screenHeight/2);
+
+  canvasContext.fillText("Loading...", (data.screenWidth - canvasContext.measureText('Loading...').width) / 2, data.screenHeight / 2);
 
 }
 
@@ -121,8 +121,6 @@ const renderBuffer = (data: IGameData) => {
   const canvas = new OffscreenCanvas(screenWidth, screenHeight)
   canvas.getContext('2d')?.putImageData(renderData.imageData, 0, 0)
   screenCanvasContext.drawImage(canvas, 0, 0)
-
-
 }
 
 export { initializeBuffer, drawPixel, drawLine, renderBuffer, drawTexture, drawLoading }

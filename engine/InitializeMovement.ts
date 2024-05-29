@@ -10,39 +10,39 @@ const pressedKeys: IPressedKeys = {
   d: false
 }
 
-const initializeMovement = (data : IGameData) => {
+const initializeMovement = (data: IGameData) => {
   data.pressedKeys = pressedKeys
 
   window.addEventListener('keyup', (e) => {
-    if(e.key.toLowerCase() == 'w'){
+    if (e.key.toLowerCase() == 'w') {
       pressedKeys.w = false
     }
-    if(e.key.toLowerCase() == 'a'){
+    if (e.key.toLowerCase() == 'a') {
       pressedKeys.a = false
     }
-    if(e.key.toLowerCase() == 's'){
+    if (e.key.toLowerCase() == 's') {
       pressedKeys.s = false
     }
-    if(e.key.toLowerCase() == 'd'){
+    if (e.key.toLowerCase() == 'd') {
       pressedKeys.d = false
     }
   })
 
   window.addEventListener('keydown', (e) => {
-    if(e.key.toLowerCase() == 'w'){
+    if (e.key.toLowerCase() == 'w') {
       pressedKeys.w = true
     }
-    if(e.key.toLowerCase() == 'a'){
+    if (e.key.toLowerCase() == 'a') {
       pressedKeys.a = true
     }
-    if(e.key.toLowerCase() == 's'){
+    if (e.key.toLowerCase() == 's') {
       pressedKeys.s = true
     }
-    if(e.key.toLowerCase() == 'd'){
+    if (e.key.toLowerCase() == 'd') {
       pressedKeys.d = true
     }
 
   })
 }
 
-export default(initializeMovement)
+export default (initializeMovement)
