@@ -78,10 +78,11 @@ const toggleMovement = () => {
 }
 
 const startEngine =  () => {
-  initializeTextures(data)
-  initializeBuffer(data)
-  initializeMovement(data)
   initializeCanvas(data, gameWidth, gameHeight)
+  initializeBuffer(data)
+  initializeTextures(data)
+  initializeMovement(data)
+  
   // Main loop
   const gameLoop = () => {
     (data.canvasContext as unknown as CanvasRenderingContext2D).clearRect(0, 0, data.screenWidth, data.screenHeight);
