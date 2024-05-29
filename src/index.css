@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+}
+
+body, :root{
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+:root {
+  line-height: 1.5;
+
+  font-family: Pixelify Sans, DotGothic16, sans-serif; /* also defined in the theme */
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  background-color: #d8ebf1;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

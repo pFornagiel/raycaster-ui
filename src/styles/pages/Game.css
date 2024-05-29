@@ -1,0 +1,45 @@
+.SVG-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+.options-wrapper {
+  height: 510px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 2rem;
+}
+
+.controls-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #0be3dc;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.controls-absolute {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+
+  svg {
+    cursor: pointer;
+  }
+
+  svg>path {
+    fill: white;
+  }
+
+
+}

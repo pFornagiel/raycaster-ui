@@ -1,0 +1,34 @@
+.window-bar{
+  width: 100%;
+  height: 30px;
+  min-height: 30px;
+  border-bottom: solid 2px #242424;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.window-body{
+  height:100%;
+  width:100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height:100%;
+}
+
+.window-container{
+  border: solid 2px #242424;
+  overflow: hidden;
+  -webkit-box-shadow: -4px 4px 0px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: -4px 4px 0px 0px rgba(66, 68, 90, 1);
+  box-shadow: -4px 4px 0px 0px rgba(66, 68, 90, 1);
+  height: fit-content;
+  max-height: 80%;
+}
+
+svg{
+  fill: #242424!important;
+  margin-left: 2px;
+}
