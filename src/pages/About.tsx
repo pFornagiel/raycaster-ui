@@ -21,7 +21,7 @@ const About = () => {
           {/* Github Button Window */}
           {/* Inside  the other window to conviniently use absolute positioning */}
           <Window width='150px' height='130px' colourBar="#5b87ff" colourBackground="#ffe588" sx={{ position: 'absolute', left: '-110px', top: '-40px' }}>
-            <Box className="SVG-container" sx={{ '> a > svg:hover > path': { fill: '#5b87ff' } }}>
+            <Box className="SVG-container" sx={{ '> a:hover > svg > path': { fill: '#5b87ff' } }}>
               <a href="https://github.com/pFornagiel/raycaster-ui"><GithubSVG/></a>
             </Box>
           </Window>
