@@ -2,6 +2,8 @@
 A work-in-progress implementation of Raycasting Engine written natively in Typescript, being a small personal project inspired by Wolfenstein3D.
 This project is a Web UI for my original [Simply-Raycaster Project](https://github.com/pFornagiel/Simply-Raycaster).
 
+Available at the current stage of development [here](https://pfornagiel.github.io/raycaster-ui/).
+
 ## Sources
 #### Raycasting Engine:
 The blog and repository listed below are great introduction to the raycasting method and I highly recommend giving them a read.
