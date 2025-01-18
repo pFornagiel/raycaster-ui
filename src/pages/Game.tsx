@@ -23,13 +23,21 @@ const Game = () => {
     return () => { clearInterval(loop) }
   }, [])
 
+  const handleGoBackToMenu = () => {
+    if(controls){
+      setControls(false)
+      toggleMovement();
+    }
+    navigate('/');
+  }
+
   return (
     <Box className='window-wrapper-fullscreen'>
       <Stack className="options-wrapper" direction='column'>
         {/* Go back to main menu button */}
         <Window width='150px' height='130px' colourBar="#ffec88" colourBackground="#eeb4fe">
           <Box className="SVG-container" sx={{ '& > svg:hover > path': { fill: '#ffec88' } }}>
-            <ArrowSVG onClick={() => { navigate('/') }} />
+            <ArrowSVG onClick={handleGoBackToMenu} />
           </Box>
         </Window>
         {/* Toggle help sreen button (controls state) */}
