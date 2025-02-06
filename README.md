@@ -1,4 +1,4 @@
-# Simply-Raycaster - UI Edition
+# Simply-Raycaster 👾
 A work-in-progress implementation of Raycasting Engine written natively in Typescript, being a small personal project inspired by Wolfenstein3D.
 This project is a Web UI for my original [Simply-Raycaster Project](https://github.com/pFornagiel/Simply-Raycaster).
 
